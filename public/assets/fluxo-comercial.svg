@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 320" role="img" aria-labelledby="titulo desc">
+  <title id="titulo">Fluxo comercial do Protheus: do orçamento de venda ao título a receber</title>
+  <desc id="desc">Diagrama do fluxo comercial no Protheus: orçamento de venda vira pedido, o pedido é liberado após análise de crédito, gera nota fiscal de saída e finalmente o título a receber no financeiro.</desc>
+  <defs>
+    <marker id="seta3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <g stroke="#475569" stroke-width="2.5" fill="none" marker-end="url(#seta3)">
+    <path d="M215,150 L255,150"/>
+    <path d="M465,150 L505,150"/>
+    <path d="M715,150 L755,150"/>
+    <path d="M965,150 L1005,150"/>
+  </g>
+
+  <text x="235" y="135" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11" fill="#334155">CJ_STATUS="B"</text>
+  <text x="485" y="135" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11" fill="#334155">crédito OK</text>
+  <text x="735" y="135" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11" fill="#334155">fatura</text>
+  <text x="985" y="135" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11" fill="#334155">F2_DUPL=E1_NUM</text>
+
+  <g>
+    <rect x="10" y="115" width="205" height="70" rx="16" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+    <text x="112" y="143" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="20">📝</text>
+    <text x="112" y="167" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#1e293b" font-weight="bold">Orçamento (SCJ/SCK)</text>
+  </g>
+
+  <g>
+    <rect x="255" y="115" width="210" height="70" rx="16" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+    <text x="360" y="143" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="20">🧾</text>
+    <text x="360" y="167" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#78350f" font-weight="bold">Pedido de Venda (SC5/SC6)</text>
+  </g>
+
+  <g>
+    <rect x="505" y="115" width="210" height="70" rx="16" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/>
+    <text x="610" y="143" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="20">✅</text>
+    <text x="610" y="167" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#7f1d1d" font-weight="bold">Liberado p/ faturar (SC9)</text>
+  </g>
+
+  <g>
+    <rect x="755" y="115" width="210" height="70" rx="16" fill="#fed7aa" stroke="#c2410c" stroke-width="2"/>
+    <text x="860" y="143" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="20">📄</text>
+    <text x="860" y="167" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#7c2d12" font-weight="bold">Nota Fiscal (SF2/SD2)</text>
+  </g>
+
+  <g>
+    <rect x="1005" y="115" width="135" height="70" rx="16" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="1072" y="143" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="20">💰</text>
+    <text x="1072" y="167" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#1e3a8a" font-weight="bold">Receber (SE1)</text>
+  </g>
+
+  <text x="610" y="90" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11" fill="#334155">MV_BLOQUEI · MV_CREDCLI · MV_BLOQCRED · MV_AVALCRD</text>
+  <text x="1072" y="90" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11" fill="#334155">MV_1DUPNAT/2DUPNAT</text>
+
+  <text x="575" y="290" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="12" fill="#64748b">
+    Fonte: Central de Atendimento TOTVS — vínculo de tabelas SIGAFAT (ver página Fontes)
+  </text>
+</svg>
